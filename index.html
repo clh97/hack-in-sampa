@@ -5,13 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <nav>
         <img class="nav__logo" src="http://placekitten.com/200/64" alt="">
         <div class="nav__selectors">
-            <select class="nav__selectors__select nav__selectors__select--months">
+            <select onchange="dateChange()" class="nav__selectors__select nav__selectors__select--months">
                 <option class="select__option" value="01">Janeiro</option>
                 <option class="select__option" value="02">Fevereiro</option>
                 <option class="select__option" value="03">Março</option>
@@ -26,9 +27,7 @@
                 <option class="select__option" value="12">Dezembro</option>
             </select>
 
-            <select class="nav__selectors__select nav__selectors__select--years">
-                <option class="select__option" value="2013">2013</option>
-                <option class="select__option" value="2014">2014</option>
+            <select onchange="dateChange()" class="nav__selectors__select nav__selectors__select--years">
                 <option class="select__option" value="2015">2015</option>
                 <option class="select__option" value="2016">2016</option>
                 <option class="select__option" value="2017">2017</option>
@@ -39,14 +38,42 @@
 
     <main>
 
-        <div class="main-card">
+        <article class="main-card">
 
-            <header class="main-card__header">xxxxxxxxxxxxx</header>
+            <img src="http://placekitten.com/32/32" class="main-card__prev"></img>
+            <img src="http://placekitten.com/32/32" class="main-card__next"></img>
 
+            <header class="main-card__header">
+                <h2 class="main-card__header__title">xxxxxxx</h2>
+            </header>
 
-        </div>
+            <h3 class="main-card__content__title"><strong>Despesa:</strong>xxxx</h3>
+
+            <div class="main-card__content">
+
+                <div class="main-card__content__card">
+                    <img src="http://placekitten.com/250/250" alt="" class="card__image">
+                    <h2 class="card__title">xxx</h2>
+                    <h2 class="card__price">xxx</h2>
+                </div>
+
+                <div class="main-card__content__card">
+                    <img src="http://placekitten.com/250/250" alt="" class="card__image">
+                    <h2 class="card__title">xxx</h2>
+                    <h2 class="card__price">xxx</h2>
+                </div>
+            </div>
+            
+            <a href="#" class="main-card__share">compartilhar</a>
+        </article>
+
+        <article class="info-card">
+            <h2 class="info-card__title">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique in, voluptas nam natus provident eos, optio maxime rerum aspernatur harum voluptatum? Omnis harum debitis architecto!</h2>
+            <h2 class="info-card__subtitle">Lorem ipsum dolor sit amet.</h2>
+        </article>
 
     </main>
 </body>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 <script src="js/index.js"></script>
 </html>

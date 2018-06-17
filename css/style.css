@@ -4,7 +4,7 @@
 
 body {
     margin: 0;
-    padding: 0;
+    padding: 10rem 0 0 0;
     background: #fcf9ff;
 }
 
@@ -16,10 +16,82 @@ nav {
     align-items: center;
     justify-content: space-between;
     width: 100%;
-    height: 7.5vh;
+    height: auto;
+    padding: 4px 0;
     background: red;
 }
 
 .nav__logo, .nav__selectors {
     margin: 0 4rem;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+}
+
+.main-card {
+    position: relative;
+    padding: 12px;
+    border-radius: 12px;
+    background: #999;
+}
+
+.main-card__header__title {
+    text-align: center;
+}
+
+.main-card__content {
+    display: flex;
+    align-items: center;
+    flex-flow: row;
+}
+
+.main-card__content__title {
+    text-align: center;
+}
+
+.main-card__content__card {
+    display: flex;
+    align-items: center;
+    flex-flow: column;
+    margin: 1rem;
+    padding: 12px;
+    background: gray;
+}
+
+.card__image {
+    width: 150px;
+    border-radius: 50%;
+}
+
+.main-card__share {
+    display: block;
+    text-align: center;
+}
+
+.main-card__prev, .main-card__next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+.main-card__prev {
+    left: -40px;
+}
+
+.main-card__next {
+    right: -40px;
+}
+
+.info-card {
+    margin: 0 5rem;
+    font-size: 130%;
+    text-align: right;
+}
+
+.info-card__title, .info-card__subtitle {
+    margin: 2rem 0;
+    max-width: 20ch;
 }
